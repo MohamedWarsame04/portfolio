@@ -1,0 +1,265 @@
+:root {
+  --cream: #ffebc1;
+  --dark-cream: #d7a86e;
+  --grey: #d1d1d1;
+  --dark-grey: #383838;
+}
+body {
+  background-color: grey
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  box-sizing: border-box;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../img/michiel-van-kaam-0guU7Aoo200-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 20px 0px;
+}
+.navbar ul li {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 25px;
+  transition: all 0.5s ease;
+}
+.navbar ul li a:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 10px white;
+}
+
+.details {
+  position: absolute;
+  top: 40%;
+  left: 7%;
+}
+/*banner section */
+h1 {
+  color: azure;
+  margin: 20px 0px 20px;
+  font-size: 75px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+h2 {
+  color: azure;
+  font-size: 75px;
+  margin-bottom: 20px;
+}
+
+.main {
+  display: flex;
+}
+.profile {
+  display: flex;
+}
+img {
+  width: 575px;
+  height: 700px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 10px;
+}
+/* About me section*/
+h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about {
+  background-color: var(--dark-grey);
+}
+
+.header {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 3rem;
+  text-align: center;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top: 0%;
+}
+.btn {
+  padding: 10px 35px;
+  background-color: transparent;
+  border: 1px solid white;
+  outline: none;
+  transition: 0.6s ease;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 5 white, 0 0 10px white 0 0 15px white;
+  font-weight: bold;
+}
+
+.featured-projects {
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  width: 210px;
+  height: 300px;
+  margin: 10px;
+  position: relative;
+}
+.card-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 2rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 90%;
+  position: relative;
+}
+.card-main {
+  width: 420px;
+  height: 300px;
+  margin: 10;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-main:hover img {
+  filter: blur(4px);
+}
+.card:hover img {
+  filter: blur(4px);
+}
+.card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  border: 1px solid yellow;
+}
+.card-main:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  border: 1px solid yellow;
+}
+
+/* contact me styles*/
+.contact {
+  text-align: center;
+  margin-top: 200px;
+}
+.form-container {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 0px 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--dark-grey);
+}
+.form-row {
+  display: flex;
+  flex-direction: row;
+}
+.form-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: none;
+}
+.form-input {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  background-color: var(--grey);
+  text-align: center;
+}
+.form-input-email {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  background-color: var(--grey);
+  text-align: center;
+}
+.btn {
+  font-size: 1rem;
+  padding: 1rem;
+  border: var(--cream) 0.5rem solid;
+  color: var(--cream);
+  border-radius: 4rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 420px) {
+    .navbar ul {
+        flex-direction: column;
+        
+    }
+
+    .main{
+        flex-direction: column;
+        justify-content: center;
+    }
+   
+    .profile-picture {
+        width: 300px;
+        height: auto;
+    }
+}
+
